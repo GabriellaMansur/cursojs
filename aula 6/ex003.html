@@ -23,8 +23,18 @@
 
     
     <script>
-        var nome = window.prompt('Qual é o seu nome?')
-        window.alert('É um grande prazer em te conhecer,' + nome + '!') //esse + chama concatenação
+        var n1 = Number.parseInt( window.prompt('Digite um número')) //esse comando recebe só string, por isso na hora da soma, apesar de ser number, ele trata como string
+        var n2 = Number.parseInt(window.prompt('Digite outro número'))
+        var s = n1 + n2
+        window.alert(`A soma dos números ${n1} e ${n2} é igual a ${s}` ) /*essa é uma forma de fazer  tipo um concatenação, mas sem usar o +. Assim o código fica mais limpo. Lembra que no lugar de aspas se usa a crase*/
+        // (number + number) para adição
+        //(string + string) para concatenação
+
+        /* Formatando strings
+        var s = 'Javascript'
+        s.lenght -- diz qua é o tamanho da string, quantas letras ela tem
+        s.toUpperCase() -- para deixar em letras maiúsculas
+        s.toLowerCase () -- para deixar tudo em letras minúsculas */
     </script>
 </body>
 </html>
