@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AEROPORTO</title>
+    <style>
+        body {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Verificador de nacionalidade</h1>
+    Em qual país você mora? <input type="text" name="txt" id="txt">
+    <input type="button" value="Verificar" onclick="comparar()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function comparar() {
+            var txt = window.document.getElementById('txt').value // [object HTMLInputElement]
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `<p>Você mora em ${txt}</p>`
+            if (txt == 'Brasil'){
+                res.innerHTML += `<p>Você é brasileiro!</P>`
+            } else {
+                res.innerHTML += `<p>Você é estrangeiro`
+            }
+        }
+    </script>
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
