@@ -25,8 +25,13 @@ section {
     box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.61);
 }
 
-div {
+div#button {
+    justify-content: center;
+    align-items: center;
     text-align: center;
+}
+
+div#res {
     align-items: center;
     padding: 10px;
 }
